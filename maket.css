@@ -1,0 +1,974 @@
+@font-face {
+    font-family: "Chronicle Display";
+    src: url(Chronicle\ Display\ Black.otf) format("truetype");
+    font-style: normal; 
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url(Gilroy-Light.otf) format("truetype");
+    font-style: normal; 
+    font-weight: normal;
+}
+.main1{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: rgba(11, 29, 38, 1);
+    height: 4600px;
+}
+.back{
+    width: 100%;
+    height: 1200px;
+    background-image: url(hg.png), url(bg.png), url(vg.png);
+}
+.back > .air{
+    width: 100%;
+    height: 1513px;
+    top: -400px;
+    gap: 0px;
+    opacity: 0px;
+    object-fit: cover;
+    filter: brightness(80%)
+}
+.back > .mountains{
+    width: 100%;
+    height: 1422px;
+    top: 464px;
+    gap: 0px;
+    opacity: 0px;
+    object-fit: cover;
+}
+.back > .character{
+    width: 100%;
+    height: 926px;
+    top: 768px;
+    gap: 0px;
+    opacity: 0px;
+    object-fit: cover;
+}
+.gradient{
+    width: 100%;
+    height: 700px;
+    top: 1200px;
+    gap: 0px;
+    opacity: 0px;
+    background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%);
+}
+.heading{
+    width: 95%;
+    height: max-content;
+    gap: 0px;
+    opacity: 0px;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.hFirst{
+    color: white;
+    height: max-content;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.trio{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+.mntn{
+    position: relative;
+    font-family: "Chronicle Display";
+    font-size: 32px;
+    line-height: 38.4px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    width: 26px;
+    height: 38px;
+    top: -6px;
+    gap: 0px;
+    opacity: 0px;
+}
+.eq{
+    position: relative;
+    font-family: "Gilroy";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.76px;
+    width: 90px;
+    height: 22px;
+    top: 2px;
+    gap: 0px;
+    opacity: 0px;
+}
+.au{
+    position: relative;
+    font-family: "Gilroy";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.76px;
+    text-align: left;
+    width: 75px;
+    height: 22px;
+    top: 2px;
+    gap: 0px;
+    opacity: 0px;
+}
+.blog{
+    position: relative;
+    font-family:"Gilroy";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.76px;
+    text-align: left;
+    width: 38px;
+    height: 22px;
+    top: 2px;
+    gap: 0px;
+    opacity: 0px;    
+}
+.account{
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    width: 98px;
+    height: 24px;
+    top: 1px;
+    gap: 0px;
+    opacity: 0px;
+}
+.person{
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    left: 2px;
+    gap: 0px;
+    opacity: 0px;
+}
+.acc{
+    font-family: "Gilroy";
+    font-size: 17px;
+    line-height: 20.55px;
+    text-align: left;
+    width: 66px;
+    height: 21px;
+    top: 3px;
+    gap: 0px;
+    opacity: 0px;
+        
+}
+.menu{
+    width: 95%;
+    display: flex;
+    height: 50%;
+    margin: auto;
+    margin-top: 2%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+.follow{
+    padding: 0px;
+    opacity: 0px;  
+    gap: 1vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+}
+.fu{
+    width: max-content;
+    gap: 0px;
+    opacity: 0px;
+    font-family: "Gilroy";
+    font-size: 18px;
+    font-weight: 700;
+    writing-mode: vertical-rl;
+}
+.images{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.inst{
+    width: 24px;
+    height: 24px;
+    padding: 2px;
+    gap: 0px;
+    opacity: 0px;
+}
+.twitter{
+    width: 24px;
+    height: 24px;
+    padding: 2px;
+    gap: 0px;
+    opacity: 0px;
+}
+.guideHead{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.guideText{
+    color: #FBD784;
+    gap: 0px;
+    opacity: 0px;
+    font-family: "Gilroy";
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 22.05px;
+    letter-spacing: 6px;       
+}
+.guideMain{
+    font-family: 'Chronicle Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 114%;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+.guideFooter{
+    margin-top: 20px;
+    gap: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: unset;
+}
+.guide{
+    width: 55%;
+    opacity: 0px;
+    margin: auto;
+    margin-top: 10%;
+}
+.guideFooterText{
+    color: white;
+    font-family: "Gilroy";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 21.76px;
+    text-align: left;
+}
+.leftScroll{
+    color: white;
+    font-family: "Gilroy";
+    font-size: 18px;
+    line-height: 21.76px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.scroll{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+    align-items: stretch;
+    position: fixed;
+    right: 0;
+    margin-right: 2%;
+}
+.middle{
+    z-index: 5;
+    margin: auto;
+    width: 76%;
+    height: 3040px;
+    position: relative;
+    top: 200px;
+}
+.firstMiddle{
+    width: 100%;
+    height: 720px;
+    gap: 0px;
+    opacity: 0px;
+}
+.imageMiddleMain1{
+    width: 39%;
+    height: 720px;
+    background-image: url(first.png);
+    background-size: cover;
+    background-position: center;
+}
+.imageMiddleMain2{
+    width: 39%;
+    height: 720px;
+    background-image: url(second.jpg);
+    background-size: cover;
+    background-position: end;
+}
+.imageMiddleMain3{
+    width: 39%;
+    height: 720px;
+    background-image: url(third.png);
+    background-size: cover;
+    background-position: center;
+}
+.backNumber1{
+    font-weight: bolder;
+    color: white;
+    font-family:"Gilroy";
+    font-size: 240px;
+    font-weight: 700;
+    text-align: left;
+    position: absolute;
+    gap: 0px;
+    z-index: 0;
+    opacity: 10%;
+}
+.middleThings{
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+.middleText{
+    color: #FBD784;
+    gap: 0px;
+    opacity: 0px;
+    font-family: "Gilroy";
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 22.05px;
+    letter-spacing: 6px; 
+}
+.textMiddle1{
+    margin: auto;
+    width: 45%;
+}
+.middleMain{
+    font-family: 'Chronicle Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 114%;
+    color: #FFFFFF;
+}
+.middleMain2{
+    margin-top: 30px;
+    width: 100%;
+    gap: 0px;
+    opacity: 0px;    
+    font-family: "Gilroy";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    color: white;
+}
+.middleFooterText{
+    color: rgba(251, 215, 132, 1);
+    font-family: "Gilroy";
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+}
+.middleFooter{
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    gap: 1vw;
+}
+.textMiddle2{
+    margin-left: auto;
+    width: 45%;
+}
+.backNumber2{
+    font-weight: bolder;
+    color: white;
+    font-family:"Gilroy";
+    font-size: 240px;
+    font-weight: 700;
+    text-align: left;
+    position: absolute;
+    gap: 0px;
+    z-index: 2;
+    opacity: 10%;
+    left: 45%;
+}
+.secondMiddle{
+    margin-top: 200px;
+}
+.thirdMiddle{
+    margin-top: 200px;
+}
+.ending{
+    width: 100%;
+    height: 280px;
+    gap: 0px;
+    opacity: 0px;
+    display: flex;
+    margin-top: 200px;
+}
+.leftFooter{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.underFooter{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.logo{
+    font-family: "Chronicle Display";
+    font-size: 30px;
+    line-height: 38.4px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: white;
+}
+.underLogo{
+    margin-top: 30px;
+    width: 33%;
+    font-family: "Gilroy";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    color: white;
+}
+.copyright{
+    font-family: "Gilroy";
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    color: grey;
+    margin: 0;
+}
+.rightFooter{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.footerText{
+    font-family: "Gilroy";
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    color: white;
+    margin: 0;
+}
+.firstFooter{
+    width: max-content;
+    height: 100%;
+    margin-right: 10px;
+}
+.secondFooter{
+    width: max-content;
+    height: 100%;
+}
+.footerHigh{
+    height: 80%;
+    margin:  0;
+    padding: 0;
+}
+.footerHigh1{
+    height: 80%;
+    margin:  0;
+    padding: 0;
+}
+.guideText1{
+    margin:  0;
+    padding: 0;
+    color: #FBD784;
+    gap: 0px;
+    opacity: 0px;
+    font-family: "Gilroy";
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 6px;     
+    height: 10%; 
+}
+.footerText1{
+    color: rgba(11, 29, 38, 1);
+    font-family: "Gilroy";
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    margin: 0;
+}
+@media (min-width: 1025px){
+    .guide{
+        margin-top: 15%;
+        width: 950px;
+        height: min-content;
+        margin: auto;
+    }
+    .underLogo{
+        width: 50%;
+    }
+    .footerHigh{
+        width: max-content;
+    }
+    .footerHigh1{
+        width: max-content;
+    }
+    .firstFooter{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .secondFooter{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footerHigh{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footerHigh1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .guideText1{
+        width: 110%;
+    }
+}
+@media (max-width: 1024px){
+    .guide{
+        margin-top: 15%;
+        width: 700px;
+        margin: auto;
+        height: min-content;
+    }
+    .guideMain{
+        font-size: 60px;
+    }
+    .imageMiddleMain2{
+        background-position: 15%;
+    }
+    .scrollMain{
+        height: 200px;
+    }
+    .backNumber1{
+        font-size: 200px;
+    }
+    .backNumber2{
+        font-size: 200px;
+    }
+    .middleMain{
+        font-size: 45px;
+        width: 100%;
+    }
+    .underLogo{
+        width: 50%;
+    }
+    .firstFooter{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .secondFooter{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footerHigh{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footerHigh1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .secondFooter > .guideText1{
+        width: 150%;
+    }
+    .rightFooter{
+        justify-content: space-between;
+    }
+    .footerHigh{
+        width: max-content;
+    }
+    .footerHigh1{
+        width: max-content;
+    }
+}
+@media (max-width: 768px) {
+    .trio{
+        width: 35%;
+    }
+    .menu{
+        margin: auto;
+    }
+    .guide{
+        margin-top: 15%;
+        width: 70%;
+        margin: auto;
+    }
+    .guideMain{
+        font-size: 45px;
+    }
+    .scrollMain{
+        height: 150px;
+    }
+    .fu{
+        font-size: 14px;
+    }
+    .middle{
+        width: 78%;
+    }
+    .backNumber1{
+        font-size: 140px;
+    }
+    .backNumber2{
+        font-size: 140px;
+        z-index: 1;
+        margin-left: 30px;
+    }
+    .middleMain{
+        font-size: 45px;
+        width: 100%;
+    }
+    .imageMiddleMain1{
+        width: 48%;
+        height: 600px;
+        padding: 20px; 
+    }
+    .imageMiddleMain2{
+        width: 50%;
+        height: 600px;
+        z-index: 2;
+    }
+    .imageMiddleMain3{
+        width: 50%;
+        height: 600px;
+    }
+    .middleMain2{
+        font-size: 15px;
+    }
+    .leftScroll{
+        font-size: 13px;
+    }
+    .mntn{
+        font-size: 25px;
+    }
+    .eq{
+        font-size: 15px;
+    }
+    .au{
+        font-size: 15px;
+    }
+    .blog{
+        font-size: 15px;
+    }
+    .acc{
+        font-size: 15px;
+    }
+    .textMiddle1{
+        width: 50%;
+        padding: 1.5rem;
+    }
+    .textMiddle2{
+        padding: 1.5rem;
+    }
+    .middleThings{
+        display: flex;
+        justify-content: space-around;
+    }
+    .middleText{
+        font-size: 15px;
+    }
+    .middleMain{
+        font-size: 35px;
+    }
+    .middleMain2{
+        font-size: 12px;
+    }
+    .middleFooterText{
+        font-size: 15px;
+    }
+    .logo{
+        font-size: 25px;
+    }
+    .underLogo{
+        font-size: 12px;
+        width: 80%;
+    }
+    .copyright{
+        font-size: 12px;
+    }
+    .guideText1{
+        font-size: 14px;
+    }
+    .footerText{
+        font-size: 12px;
+    }
+    .footerText1{
+        font-size: 12px;
+    }
+    .footerHigh{
+        width: max-content;
+    }
+    .rightFooter{
+        justify-content: space-between;
+    }
+    .firstFooter{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .secondFooter{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footerHigh{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footerHigh1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .secondFooter > .guideText1{
+        width: 150%;
+    }
+    .rightFooter{
+        justify-content: space-between;
+    }
+    .footerHigh{
+        width: max-content;
+    }
+    .footerHigh1{
+        width: max-content;
+    }
+    .scroll{
+        gap: 9px;
+    }
+}
+@media (max-width:550px){
+    .mntn{
+        font-size: 15px;
+        width: max-content;
+    }
+    .eq{
+        font-size: 10px;
+    }
+    .au{
+        font-size: 10px;
+    }
+    .blog{
+        font-size: 10px;
+    }
+    .acc{
+        font-size: 10px;
+        width: min-content;
+    }
+    .fu{
+        font-size: 11px;
+    }
+    .hFirst{
+        gap: 10px;
+    }
+    .account{
+        justify-content: unset;
+        gap: 5px;
+        width: min-content;
+    }
+    .person{
+        width: 18px;
+        height: 18px;
+    }
+    .trio{
+        width: 45%;
+    }
+    .follow{
+        left: 0;
+        margin-left: 1%;
+    }
+    .guideText{
+        font-size: 14px;
+    }
+    .guideHead{
+        width: 120%;
+    }
+    .linier{
+        width: 40px;
+    }
+    .guideMain{
+        font-size: 30px;
+        line-height: 100%;
+    }
+    .guideFooterText{
+        font-size: 13px;
+    }
+    .arrow{
+        width: 10px;
+    }
+    .logo{
+        font-size: 15px;
+    }
+    .underLogo{
+        font-size: 10px;
+        height: min-content;
+        line-height: normal;
+        margin-top: 15px;
+        width: 90%;
+    }
+    .copyright{
+        font-size: 10px;
+        width: 90%;
+    }
+    .guideText1 {
+        font-size: 10px;
+    }
+    .footerText {
+        font-size: 10px;
+    }
+    .ending{
+        width: 100%;
+        height: 200px;
+        margin-top: 80px;
+    }
+    .backNumber2{
+        font-size: 10px;
+    }
+    .rightFooter{
+        width: 50%;
+    }
+    .footerHigh {
+        width: min-content;
+        height: 70%;
+    }
+    .leftFooter{
+        width: 50%;
+    }
+    .footerHigh1 {
+        width: min-content;
+        height: 70%;
+    }
+    .inst{
+        width: 15px;
+        height: 15px;
+    }
+    .twitter{
+        height: 15px;
+        width: 15px;
+    }
+    .scrollMain{
+        height: 100px;
+    }
+    .leftScroll{
+        font-size: 11px;
+    }
+    .scroll{
+        gap: 5px;
+    }
+    .guideMain{
+        width: 100%;
+    }
+    .guide{
+        margin-top: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    .backNumber1 {
+        font-size: 90px;
+        margin-top: 25px;
+    }
+    .backNumber2 {
+        font-size: 90px;
+        margin-left: 10px;
+        margin-top: 25px;
+    }
+    .middleText{
+        font-size: 10px;
+        letter-spacing: 4px;
+    }
+    .middleMain{
+        font-size: 20px;
+    }
+    .middleMain2{
+        font-size: 10px;
+        margin-top: 15px;
+    }
+    .middleFooterText {
+        font-size: 10px;
+    }
+    .textMiddle1{
+        height: min-content;
+        width: 40%;
+    }
+    .middle {
+        width: 80%;
+    }
+    .firstMiddle{
+        margin-left: 0;
+    }
+    .middleFooter{
+        margin-top: 10px;
+    }
+    .textMiddle2 {
+        width: 40%;
+        height: max-content;
+        margin: auto;
+        padding: 1.5rem;
+    }
+    .scroll {
+        margin-right: 1%;
+    }
+    .imageMiddleMain1{
+        padding: 20px;
+        width: 55%;
+    }
+    .imageMiddleMain2{
+        padding: 20px;
+        width: 55%;
+    }
+    .imageMiddleMain3{
+        padding: 20px;
+        width: 55%;
+    }
+    .middle{
+        height: 2500px;
+    }
+    .main1{
+        height: 4200px;
+    }
+    .secondMiddle{
+        margin-top: 80px;
+    }
+    .thirdMiddle{
+        margin-top: 80px;
+    }
+}
+@media (max-width: 399px){
+    .imageMiddleMain1{
+        height: 720px;
+    }
+    .imageMiddleMain2{
+        height: 720px;
+        background-position: 22%
+    }
+    .imageMiddleMain3{
+        height: 720px;
+        background-position: 52%;
+    }
+    .backNumber1 {
+        font-size: 80px;
+    }
+    .backNumber2 {
+        font-size: 80px;
+    }
+    .leftScroll {
+        font-size: 9px;
+    }
+}
