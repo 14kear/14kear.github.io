@@ -10,11 +10,57 @@
     font-style: normal; 
     font-weight: normal;
 }
+:root{
+    --color-bg: rgba(11, 29, 38, 1);
+    --color-body: #f8f4f0;
+    --color-primary: #fff;
+    --color-secondary: rgba(11, 29, 38, 1);
+    --color-gradient: rgba(11, 29, 38, 0);
+    --color-gradient1: rgba(11, 29, 38, 1);
+    --color-copyright: grey;
+    --color-changeImg: invert(1);
+    --color-changeImg1: white;
+    --color-changeImg2: #FBD784;
+    --value-opacity: 10%;
+    --color-scroll: white;
+}
+.whitestyle{
+    --color-bg: #F8F7F1;
+    --color-body: #2A2A2A;
+    --color-primary: black;
+    --color-secondary: rgba(248,244,240, 1);
+    --color-gradient: rgba(248,244,240, 0);
+    --color-gradient1: rgba(248,244,240, 1);
+    --color-copyright: black;
+    --color-changeImg: invert(0);
+    --color-changeImg1: black;
+    --color-changeImg2: brown;
+    --value-opacity: 5%;
+    --color-scroll: grey;
+}
+#but{
+    position: fixed;
+    z-index: 20;
+    background: None;
+    left: 95%;
+    top: 10%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-color: var(--color-primary);
+}
+#but > img{
+    margin: auto;
+    object-fit: cover;
+    width: 80%;
+    height: 80%;
+    filter: var(--color-changeImg);
+}
 .main1{
     margin: 0;
     padding: 0;
     width: 100%;
-    background: rgba(11, 29, 38, 1);
+    background: var(--color-bg);
     height: 4600px;
 }
 .back{
@@ -53,7 +99,7 @@
     top: 1200px;
     gap: 0px;
     opacity: 0px;
-    background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%);
+    background: linear-gradient(180deg, var(--color-gradient) 0%, var(--color-gradient1) 61.38%);
 }
 .heading{
     width: 95%;
@@ -68,7 +114,7 @@
     margin: auto;
 }
 .hFirst{
-    color: white;
+    color: var(--color-primary);
     height: max-content;
     display: flex;
     width: 100%;
@@ -175,7 +221,7 @@
     padding: 0px;
     opacity: 0px;  
     gap: 1vw;
-    color: white;
+    color: var(--color-primary);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -215,7 +261,7 @@
     gap: 20px;
 }
 .guideText{
-    color: #FBD784;
+    color: var(--color-changeImg2);
     gap: 0px;
     opacity: 0px;
     font-family: "Gilroy";
@@ -231,7 +277,7 @@
     font-size: 80px;
     line-height: 114%;
     text-transform: capitalize;
-    color: #FFFFFF;
+    color: var(--color-primary);
 }
 .guideFooter{
     margin-top: 20px;
@@ -247,7 +293,7 @@
     margin-top: 10%;
 }
 .guideFooterText{
-    color: white;
+    color: var(--color-primary);
     font-family: "Gilroy";
     font-size: 20px;
     font-weight: 700;
@@ -255,7 +301,7 @@
     text-align: left;
 }
 .leftScroll{
-    color: white;
+    color: var(--color-primary);
     font-family: "Gilroy";
     font-size: 18px;
     line-height: 21.76px;
@@ -311,7 +357,7 @@
 }
 .backNumber1{
     font-weight: bolder;
-    color: white;
+    color: var(--color-primary);
     font-family:"Gilroy";
     font-size: 240px;
     font-weight: 700;
@@ -319,7 +365,7 @@
     position: absolute;
     gap: 0px;
     z-index: 0;
-    opacity: 10%;
+    opacity: var(--value-opacity);
 }
 .middleThings{
     z-index: 1;
@@ -327,7 +373,7 @@
     align-items: center;
 }
 .middleText{
-    color: #FBD784;
+    color: var(--color-changeImg2);
     gap: 0px;
     opacity: 0px;
     font-family: "Gilroy";
@@ -346,7 +392,7 @@
     font-weight: 600;
     font-size: 64px;
     line-height: 114%;
-    color: #FFFFFF;
+    color: var(--color-primary);
 }
 .middleMain2{
     margin-top: 30px;
@@ -358,10 +404,10 @@
     font-weight: 700;
     line-height: 32px;
     text-align: left;
-    color: white;
+    color: var(--color-primary);
 }
 .middleFooterText{
-    color: rgba(251, 215, 132, 1);
+    color: var(--color-changeImg2);
     font-family: "Gilroy";
     font-size: 18px;
     font-weight: 700;
@@ -379,7 +425,7 @@
 }
 .backNumber2{
     font-weight: bolder;
-    color: white;
+    color: var(--color-primary);
     font-family:"Gilroy";
     font-size: 240px;
     font-weight: 700;
@@ -387,7 +433,7 @@
     position: absolute;
     gap: 0px;
     z-index: 2;
-    opacity: 10%;
+    opacity: var(--value-opacity);
     left: 45%;
 }
 .secondMiddle{
@@ -423,7 +469,7 @@
     line-height: 38.4px;
     letter-spacing: 0.01em;
     text-align: left;
-    color: white;
+    color: var(--color-primary);
 }
 .underLogo{
     margin-top: 30px;
@@ -433,14 +479,14 @@
     font-weight: 700;
     line-height: 32px;
     text-align: left;
-    color: white;
+    color: var(--color-primary);
 }
 .copyright{
     font-family: "Gilroy";
     font-size: 18px;
     font-weight: 500;
     text-align: left;
-    color: grey;
+    color: var(--color-copyright);
     margin: 0;
 }
 .rightFooter{
@@ -454,7 +500,7 @@
     font-size: 18px;
     font-weight: 500;
     text-align: left;
-    color: white;
+    color: var(--color-primary);
     margin: 0;
 }
 .firstFooter{
@@ -479,17 +525,17 @@
 .guideText1{
     margin:  0;
     padding: 0;
-    color: #FBD784;
+    color: var(--color-changeImg2);
     gap: 0px;
     opacity: 0px;
     font-family: "Gilroy";
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 800;
     letter-spacing: 6px;     
     height: 10%; 
 }
 .footerText1{
-    color: rgba(11, 29, 38, 1);
+    color: var(--color-secondary);
     font-family: "Gilroy";
     font-size: 18px;
     font-weight: 500;
