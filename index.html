@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="maket.css">
 </head>
 <body class="main1">
+    <div class="preloader">
+        <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path fill="currentColor"
+            d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+          </path>
+        </svg>
+      </div>
     <header class="back">
         <button id="but">
             <img src="icons8.png">
@@ -64,22 +71,22 @@
             </div>
             <div class="scroll">
                 <div class="leftScroll">
-                    <div>Start</div>
-                    <div>01</div>
-                    <div>02</div>
-                    <div>03</div>
+                    <a href="index.html#" style="text-decoration: none; color: white;">Start</a>
+                    <a href="index.html#firstMiddle" style="text-decoration: none; color: white;">01</a>
+                    <a href="index.html#secondMiddle" style="text-decoration: none; color: white;">02</a>
+                    <a href="index.html#thirdMiddle" style="text-decoration: none; color: white;">03</a>
                 </div>
                 <div>
                     <svg class="scrollMain" width="3" height="240" viewBox="0 0 3 240" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect opacity="0.5" width="3" height="240" fill="var(--color-scroll)"/>
-                        <rect width="3" height="60" fill="var(--color-changeImg1)"/>
+                        <rect id="scrollJs" width="3" height="60" fill="var(--color-changeImg1)"/>
                     </svg> 
                 </div>
             </div>
         </div>
     </header>
     <main class="middle">
-        <div class="firstMiddle">
+        <div id="firstMiddle">
             <div class="backNumber1">01</div>
             <div class="middleThings">
                 <div class="textMiddle1">
@@ -101,7 +108,7 @@
                 <div class="imageMiddleMain1"></div>
             </div>
         </div>
-        <div class="secondMiddle">
+        <div id="secondMiddle">
             <div class="backNumber2">02</div>
             <div class="middleThings">
                 <div class="imageMiddleMain2"></div>
@@ -124,7 +131,7 @@
                 </div>
             </div>
         </div>
-        <div class="thirdMiddle">
+        <div id="thirdMiddle">
             <div class="backNumber1">03</div>
             <div class="middleThings">
                 <div class="textMiddle1">
