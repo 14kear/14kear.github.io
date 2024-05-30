@@ -668,7 +668,7 @@
     }
     .middle{
         width: 78%;
-        top: 0;
+        top: 300px;
     }
     .backNumber1{
         font-size: 140px;
@@ -875,7 +875,7 @@
         font-size: 18px;
     }
     .underLogo{
-        font-size: 11px;
+        font-size: 12px;
         height: min-content;
         line-height: normal;
         margin-top: 15px;
@@ -886,10 +886,10 @@
         width: 90%;
     }
     .guideText1 {
-        font-size: 12px;
+        font-size: 14px;
     }
     .footerText {
-        font-size: 11px;
+        font-size: 13px;
     }
     .ending{
         width: 100%;
@@ -947,11 +947,11 @@
     }
     .backNumber1 {
         font-size: 90px;
-        margin-top: 15%;
+        margin-top: 10%;
     }
     .backNumber2 {
         font-size: 90px;
-        margin-top: 20%;
+        margin-top: 11%;
     }
     .middleText{
         font-size: 10px;
@@ -974,7 +974,7 @@
     }
     .middle {
         width: 93%;
-        top: 0;
+        top: 500px;
     }
     .firstMiddle{
         margin-left: 0;
@@ -1017,6 +1017,10 @@
     }
 }
 @media (max-width: 399px){
+    .middle {
+        width: 93%;
+        top: 500px;
+    }
     .back{
         height: 800px;
     }
@@ -1032,7 +1036,7 @@
     .backNumber2 {
         font-size: 80px;
         margin-left: -20px;
-        margin-top: 30%;
+        margin-top: 12%;
     }
     .leftScroll {
         font-size: 9px;
