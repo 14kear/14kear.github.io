@@ -737,7 +737,7 @@
         font-size: 35px;
     }
     .middleMain2{
-        font-size: 12px;
+        font-size: 14px;
     }
     .middleFooterText{
         font-size: 15px;
@@ -802,10 +802,10 @@
 }
 @media (max-width:550px){
     #but{
-        top: 6%;
+        top: 7%;
         width: 40px;
         height: 40px;
-        position: absolute;
+        position: fixed;
     }
     .scroll{
         display: none;
@@ -961,7 +961,7 @@
         font-size: 20px;
     }
     .middleMain2{
-        font-size: 10px;
+        font-size: 13px;
         margin-top: 15px;
     }
     .middleFooterText {
