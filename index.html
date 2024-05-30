@@ -3,22 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>14kear</title>
     <link rel="stylesheet" href="maket.css">
 </head>
 <body class="main1">
-    <div class="preloader">
-        <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-          <path fill="currentColor"
-            d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
-          </path>
-        </svg>
-      </div>
     <header class="back">
         <button id="but">
             <img src="icons8.png">
         </button>
-        <img src="hg.png" class="air" style="z-index: 1; position: absolute;">
+        <img id="start" src="hg.png" class="air" style="z-index: 1; position: absolute;">
         <img src="bg.png" class="mountains" style="z-index: 2; position: absolute;">
         <img src="vg.png" class="character" style="z-index: 3; position: absolute;">
         <div class="gradient" style="z-index: 4; position: absolute;"></div>
@@ -62,19 +55,19 @@
                     <div class="guideText">A Hiking guide</div>
                 </h1>
                 <div class="guideMain">Be prepared for the Mountains and beyond!</div>
-                <div class="guideFooter">
+                <a href="#firstMiddle" id="guideFooter" style="text-decoration: none;">
                     <div class="guideFooterText">scroll down</div>
                     <svg class="arrow" width="16px" height="24px" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M16 16L14.59 14.59L9 20.17V0H7V20.17L1.42 14.58L0 16L8 24L16 16Z" fill="var(--color-changeImg1)"/>
                     </svg>
-                </div>
+                </a>
             </div>
             <div class="scroll">
                 <div class="leftScroll">
-                    <a href="index.html#" style="text-decoration: none; color: white;">Start</a>
-                    <a href="index.html#firstMiddle" style="text-decoration: none; color: white;">01</a>
-                    <a href="index.html#secondMiddle" style="text-decoration: none; color: white;">02</a>
-                    <a href="index.html#thirdMiddle" style="text-decoration: none; color: white;">03</a>
+                    <a href="#start" id="startBut" style="text-decoration: none; color: var(--color-changeImg1);">Start</a>
+                    <a href="#firstMiddle" id="firstBut" style="text-decoration: none; color: var(--color-changeImg1);">01</a>
+                    <a href="#secondMiddle" id="secondBut" style="text-decoration: none; color: var(--color-changeImg1);">02</a>
+                    <a href="#thirdMiddle" id="thirdBut" style="text-decoration: none; color: var(--color-changeImg1);">03</a>
                 </div>
                 <div>
                     <svg class="scrollMain" width="3" height="240" viewBox="0 0 3 240" fill="none" xmlns="http://www.w3.org/2000/svg">

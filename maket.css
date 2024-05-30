@@ -43,12 +43,13 @@
     z-index: 20;
     background: None;
     right: 0;
+    margin-right: 2%;
+    gap: 20px;
     top: 10%;
     width: 50px;
     height: 50px;
     text-align: center;
     border-color: var(--color-primary);
-    margin-right: 2%;
 }
 #but > img{
     margin: auto;
@@ -57,49 +58,11 @@
     height: 80%;
     filter: var(--color-changeImg);
 }
-.preloader {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
-    background: #e0e0e0;
-    z-index: 100;
-}
-  
-.preloader__image {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    width: 70px;
-    height: 70px;
-    margin-top: -35px;
-    margin-left: -35px;
-    text-align: center;
-    animation: preloader-rotate 2s infinite linear;
-}
-  
-@keyframes preloader-rotate {
-    100% {
-      transform: rotate(360deg);
-    }
-}
-  
-.loaded_hiding .preloader {
-    transition: 5s opacity;
-    opacity: 0;
-}
-  
-.loaded .preloader {
-    display: none;
-}
 .main1{
     margin: 0;
     padding: 0;
     width: 100%;
     background: var(--color-bg);
-    height: 4600px;
 }
 .back{
     width: 100%;
@@ -157,6 +120,9 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    position: relative;
+    right: 0;
+    left: 0;
 }
 .trio{
     width: 30%;
@@ -248,7 +214,7 @@
 .menu{
     width: 95%;
     display: flex;
-    height: 50%;
+    height: 65%;
     margin: auto;
     margin-top: 2%;
     align-items: center;
@@ -317,7 +283,7 @@
     text-transform: capitalize;
     color: var(--color-primary);
 }
-.guideFooter{
+#guideFooter{
     margin-top: 20px;
     gap: 1vw;
     display: flex;
@@ -362,13 +328,11 @@
     z-index: 5;
     margin: auto;
     width: 76%;
-    height: 3040px;
     position: relative;
     top: 200px;
 }
 #firstMiddle{
     width: 100%;
-    height: 720px;
     gap: 0px;
     opacity: 0px;
 }
@@ -470,7 +434,7 @@
     text-align: left;
     position: absolute;
     gap: 0px;
-    z-index: 2;
+    z-index: 0;
     opacity: var(--value-opacity);
     left: 45%;
 }
@@ -484,9 +448,11 @@
     width: 100%;
     height: 280px;
     gap: 0px;
-    opacity: 0px;
     display: flex;
     margin-top: 200px;
+    position: relative;
+    right: 0;
+    left: 0;
 }
 .leftFooter{
     width: 60%;
@@ -567,7 +533,7 @@
     gap: 0px;
     opacity: 0px;
     font-family: "Gilroy";
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 800;
     letter-spacing: 6px;     
     height: 10%; 
@@ -669,9 +635,6 @@
         flex-direction: column;
         justify-content: space-between;
     }
-    .secondFooter > .guideText1{
-        width: 150%;
-    }
     .rightFooter{
         justify-content: space-between;
     }
@@ -705,13 +668,13 @@
     }
     .middle{
         width: 78%;
+        top: 0;
     }
     .backNumber1{
         font-size: 140px;
     }
     .backNumber2{
         font-size: 140px;
-        z-index: 1;
         margin-left: 30px;
     }
     .middleMain{
@@ -758,6 +721,9 @@
         padding: 1.5rem;
     }
     .textMiddle2{
+        width: 50%;
+    }
+    .textMiddle2{
         padding: 1.5rem;
     }
     .middleThings{
@@ -780,20 +746,20 @@
         font-size: 25px;
     }
     .underLogo{
-        font-size: 12px;
+        font-size: 15px;
         width: 80%;
     }
     .copyright{
         font-size: 12px;
     }
     .guideText1{
-        font-size: 14px;
+        font-size: 15px;
     }
     .footerText{
-        font-size: 12px;
+        font-size: 14px;
     }
     .footerText1{
-        font-size: 12px;
+        font-size: 14px;
     }
     .footerHigh{
         width: max-content;
@@ -821,9 +787,6 @@
         flex-direction: column;
         justify-content: space-between;
     }
-    .secondFooter > .guideText1{
-        width: 150%;
-    }
     .rightFooter{
         justify-content: space-between;
     }
@@ -838,6 +801,18 @@
     }
 }
 @media (max-width:550px){
+    #but{
+        top: 6%;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+    }
+    .scroll{
+        display: none;
+    }
+    .follow{
+        display: none;
+    }
     .mntn{
         font-size: 15px;
         width: max-content;
@@ -897,10 +872,10 @@
         width: 10px;
     }
     .logo{
-        font-size: 15px;
+        font-size: 18px;
     }
     .underLogo{
-        font-size: 10px;
+        font-size: 11px;
         height: min-content;
         line-height: normal;
         margin-top: 15px;
@@ -911,15 +886,21 @@
         width: 90%;
     }
     .guideText1 {
-        font-size: 10px;
+        font-size: 12px;
     }
     .footerText {
-        font-size: 10px;
+        font-size: 11px;
     }
     .ending{
         width: 100%;
         height: 200px;
+        margin: auto;
         margin-top: 80px;
+        gap: 0px;
+        display: flex;
+        position: relative;
+        right: 0;
+        left: 0;
     }
     .backNumber2{
         font-size: 10px;
@@ -950,7 +931,7 @@
         height: 100px;
     }
     .leftScroll{
-        font-size: 11px;
+        font-size: 9px;
     }
     .scroll{
         gap: 5px;
@@ -966,12 +947,11 @@
     }
     .backNumber1 {
         font-size: 90px;
-        margin-top: 25px;
+        margin-top: 15%;
     }
     .backNumber2 {
         font-size: 90px;
-        margin-left: 10px;
-        margin-top: 25px;
+        margin-top: 20%;
     }
     .middleText{
         font-size: 10px;
@@ -989,10 +969,12 @@
     }
     .textMiddle1{
         height: min-content;
-        width: 40%;
+        width: 55%;
+        margin: auto;
     }
     .middle {
-        width: 80%;
+        width: 93%;
+        top: 0;
     }
     .firstMiddle{
         margin-left: 0;
@@ -1001,8 +983,8 @@
         margin-top: 10px;
     }
     .textMiddle2 {
-        width: 40%;
-        height: max-content;
+        width: 55%;
+        height: min-content;
         margin: auto;
         padding: 1.5rem;
     }
@@ -1021,11 +1003,8 @@
         padding: 20px;
         width: 55%;
     }
-    .middle{
-        height: 2500px;
-    }
     .main1{
-        height: 4200px;
+        height: auto;
     }
     .secondMiddle{
         margin-top: 80px;
@@ -1033,17 +1012,18 @@
     .thirdMiddle{
         margin-top: 80px;
     }
+    .back{
+        height: 1000px;
+    }
 }
 @media (max-width: 399px){
-    .imageMiddleMain1{
-        height: 720px;
+    .back{
+        height: 800px;
     }
     .imageMiddleMain2{
-        height: 720px;
         background-position: 22%
     }
     .imageMiddleMain3{
-        height: 720px;
         background-position: 52%;
     }
     .backNumber1 {
@@ -1051,6 +1031,8 @@
     }
     .backNumber2 {
         font-size: 80px;
+        margin-left: -20px;
+        margin-top: 30%;
     }
     .leftScroll {
         font-size: 9px;
